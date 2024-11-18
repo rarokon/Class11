@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Presentation</title>
+</head>
+
+<body>
+    <section id="multimedia_from_local">
+        <!--Audio file player-->
+        <div>
+            <h1>Audio playing from local file.</h1><br>
+            <audio controls>
+                <source src="./Resources/001_Al_Fatihah.mp3">
+            </audio>
+        </div>
+        <br>
+        <br>
+        <!-- Video File player -->
+        <div>
+            <h1>Video playing from local file.</h1><br>
+            <video controls poster="./Resources/mernenvironment.jpg" width="600">
+                <source src="./Resources/mernenvironment.mp4">
+            </video>
+        </div>
+    </section>
+    <br><br>
+    <section id="multimedia_from_web">
+        <div>
+            <h1>Audio playing from google drive.</h1><br>
+            <!--
+            to play from google drive, we have to upload file to drive.google.com
+            then share this file with anyone with the link as viewer.
+            copy link.
+            now edit this link as below:
+            original link: https://drive.google.com/file/d/1h37nUrbowDMzllJeyVkJBG0ytHy-qkwv/view?usp=sharing
+            to https://drive.google.com/file/d/1h37nUrbowDMzllJeyVkJBG0ytHy-qkwv/preview
+            now set it to iframe tag as below.
+            -->
+            <iframe frameborder="0" width="300" height="60"
+                src="https://drive.google.com/file/d/1h37nUrbowDMzllJeyVkJBG0ytHy-qkwv/preview">
+            </iframe>
+        </div>
+        <br><br>
+        <div>
+            <h1>Video playing from youtube.</h1><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rQxrWxSV9z0?si=9L6_I_sU12PZjbjz"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+</body>
+
+</html>
